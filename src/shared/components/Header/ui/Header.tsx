@@ -4,17 +4,18 @@ import Link from "next/link"
 import s from "./Header.module.scss"
 
 interface IHeaderProps extends HTMLAttributes<HTMLHeadElement> {
-    links: { href: string; text: string }[]
+    routes: { href: string; text: string }[]
 }
 
 export const Header: FC<IHeaderProps> = (props) => {
-    const { links, ...otherProps } = props
+    const { routes, ...otherProps } = props
+
     return (
-        <header {...otherProps} className={s.header} id="header">
-            {links.map((link, i) => {
+        <header className={s.header} {...otherProps}>
+            {routes.map((route, i) => {
                 return (
-                    <Link key={i} href={link.href}>
-                        {link.text}
+                    <Link key={i} href={route.href}>
+                        {route.text}
                     </Link>
                 )
             })}

@@ -2,8 +2,8 @@ import s from "./about.module.scss"
 
 const Page = () => {
     return (
-        <section className={s.about} id="About">
-            <h1>About</h1>
+        <section id="AboutPage" className={s.about}>
+            <h1>About Page</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure provident animi dicta
                 rem, sequi nulla, dignissimos laboriosam perferendis consectetur iusto velit at amet
