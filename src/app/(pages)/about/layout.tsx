@@ -5,6 +5,7 @@ export const metadata: Metadata = {
     description: "About page description",
 }
 
-export default function AboutLayout({ children }: { children: React.ReactNode }) {
+const AboutLayout = ({ children }: { children: React.ReactNode }) => {
     return <>{children}</>
 }
+export default AboutLayout

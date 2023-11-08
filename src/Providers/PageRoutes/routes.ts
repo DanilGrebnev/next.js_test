@@ -1,5 +1,5 @@
 export const routes = [
-    { href: "/", text: "First Page" },
-    { href: "about", text: "About Page" },
-    { href: "setting", text: "Setting Page" },
+    { href: "/", text: "Home Page" },
+    { href: "/about", text: "About Page" },
+    { href: "/heroes/1", text: "Heroes Page" },
 ]

@@ -1,9 +1,11 @@
 import styles from "./page.module.css"
 
-export default function Home() {
+const Home = () => {
     return (
-        <section id="HomePage" className={styles.main}>
-            <h1>First page</h1>
+        <section id="home-page" className={styles.main}>
+            <h1>Home page</h1>
         </section>
     )
 }
+
+export default Home
